@@ -1,0 +1,219 @@
+/* ---------------------------------- */
+/* General Body Styling               */
+/* ---------------------------------- */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* ---------------------------------- */
+/* Header Styling                     */
+/* ---------------------------------- */
+header {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+/* ---------------------------------- */
+/* Navigation Menu Styling            */
+/* ---------------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  cursor: pointer;
+  z-index: 1000;
+  position: relative;
+}
+
+/* Overlay Menu Dropdown */
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1001;
+}
+
+.menu.open {
+  display: block;
+}
+
+/* ---------------------------------- */
+/* Homepage Carousel Styling          */
+/* ---------------------------------- */
+.carousel-container {
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* ---------------------------------- */
+/* Flyout Popup Modal Styling         */
+/* ---------------------------------- */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* ---------------------------------- */
+/* Homepage - Product Display Grid    */
+/* ---------------------------------- */
+.shop-collection {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.shop-collection h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ---------------------------------- */
+/* Individual Product Container       */
+/* ---------------------------------- */
+.product-container {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  margin-top: 10px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* Admin Panel - Dashboard Container  */
+/* ---------------------------------- */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+/* ---------------------------------- */
+/* Upload Product Form                */
+/* ---------------------------------- */
+.upload-product-form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.upload-product-form input,
+.upload-product-form button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* ---------------------------------- */
+/* Admin - Uploaded Products Section  */
+/* ---------------------------------- */
+.uploaded-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.uploaded-products .product-container {
+  position: relative;
+}
+
+/* Delete Button in Admin View */
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* Scrollbar Customization (Optional) */
+/* ---------------------------------- */
+.dashboard-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-container::-webkit-scrollbar-thumb {
+  background-color: #ebe7e7;
+  border-radius: 10px;
+}
